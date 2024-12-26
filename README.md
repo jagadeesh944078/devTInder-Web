@@ -20,3 +20,5 @@
 - Refactor our code to add constant file + create a component folder
 - You should not able to access other pages without login
 - if token is not present it should redirect to login page
+- built logout feature
+- login error message show if credientials are not valid
