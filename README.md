@@ -22,3 +22,6 @@
 - if token is not present it should redirect to login page
 - built logout feature
 - login error message show if credientials are not valid
+- get the feed and add the feed in the store
+- build the user card on the feed
+- add the edit profile feature also
