@@ -25,3 +25,4 @@
 - get the feed and add the feed in the store
 - build the user card on the feed
 - add the edit profile feature also
+- see all my connections
