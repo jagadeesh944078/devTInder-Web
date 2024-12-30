@@ -27,3 +27,4 @@
 - add the edit profile feature also
 - New Page - See all my connections
 - New Page - See all my conenction Requests
+- accept and reject connections
