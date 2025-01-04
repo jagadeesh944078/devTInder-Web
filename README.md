@@ -30,3 +30,18 @@
 - accept and reject connections
 - send ignore the usercard from the feed
 - signup form
+
+### Deployment Steps
+
+- to connect to machine use below command
+-        ssh -i "devTinder-secret.pem" ubuntu@ec2-13-60-225-67.eu-north-1.compute.amazonaws.com
+- below is nvm install commanf
+-        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+  location /api {
+  proxy_pass http://localhost:7777;
+  proxy_http_version 1.1;
+  proxy_set_header Upgrade $http_upgrade;
+  proxy_set_header Connection 'upgrade';
+  proxy_set_header Host $host;
+  proxy_cache_bypass $http_upgrade;
+  }
