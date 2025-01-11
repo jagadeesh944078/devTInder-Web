@@ -37,6 +37,7 @@
 -        ssh -i "devTinder-secret.pem" ubuntu@ec2-13-60-225-67.eu-north-1.compute.amazonaws.com
 - below is nvm install commanf
 -        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+
   location /api {
   proxy_pass http://localhost:7777;
   proxy_http_version 1.1;
@@ -45,3 +46,12 @@
   proxy_set_header Host $host;
   proxy_cache_bypass $http_upgrade;
   }
+
+  ### Adding Custom domain name
+
+  - purchased domain from godaddy.com
+  - singup on cloudfare & add domain name
+  - change the name servers on godaddy and point it to cloudfare
+  - wait for sometime until your name servers are updated (took 15 min)
+  - DNS record : devtinder.co.in
+  - Enable SSL Full (home work)
