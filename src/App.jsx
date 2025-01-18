@@ -7,6 +7,10 @@ import appStore from "./utils/appStore";
 import Feed from "./components/Feed";
 import Connections from "./components/Connections";
 import Requests from "./components/Requests";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsofService from "./components/TermsofService";
+import Refunds from "./components/Refunds";
+import Contactus from "./components/Contactus";
 
 function App() {
   return (
@@ -20,6 +24,10 @@ function App() {
               <Route path="/profile" element={<Profile />} />
               <Route path="/connections" element={<Connections />} />
               <Route path="/requests" element={<Requests />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/terms-of-service" element={<TermsofService />} />
+              <Route path="/refunds" element={<Refunds />} />
+              <Route path="/contact-us" element={<Contactus />} />
             </Route>
           </Routes>
         </BrowserRouter>

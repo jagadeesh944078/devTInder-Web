@@ -55,3 +55,4 @@
   - wait for sometime until your name servers are updated (took 15 min)
   - DNS record : devtinder.co.in
   - Enable SSL Full (home work)
+  - copy command "sudo scp -r dist/\* /var/www/html"
