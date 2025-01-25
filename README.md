@@ -47,12 +47,27 @@
   proxy_cache_bypass $http_upgrade;
   }
 
-  ### Adding Custom domain name
+### Adding Custom domain name
 
-  - purchased domain from godaddy.com
-  - singup on cloudfare & add domain name
-  - change the name servers on godaddy and point it to cloudfare
-  - wait for sometime until your name servers are updated (took 15 min)
-  - DNS record : devtinder.co.in
-  - Enable SSL Full (home work)
-  - copy command "sudo scp -r dist/\* /var/www/html"
+- purchased domain from godaddy.com
+- singup on cloudfare & add domain name
+- change the name servers on godaddy and point it to cloudfare
+- wait for sometime until your name servers are updated (took 15 min)
+- DNS record : devtinder.co.in
+- Enable SSL Full (home work)
+- copy command "sudo scp -r dist/\* /var/www/html"
+
+### deployment steps repeated
+
+- connect to aws using command **ssh -i "devTinder-secret.pem" ubuntu@ec2-13-60-225-67.eu-north-1.compute.amazonaws.com**
+- go to frontend folder cd "front-end folder name" and do **git pull** for latest code
+- **git log** for check the logs
+- after getting latest code do the **npm run build**
+- copy command **sudo scp -r dist/\* /var/www/html**
+- go to backend folder cd ../"backend folder name" and do **git pull** for latest code
+- to start **pm2 start npm --name "devtinder-backend" --start**
+
+### RealTime Chat using websockets(socket.io)
+
+- build the UI for a chat window on /chat/:targetUserid
+- install the socket io npm i scoket.io

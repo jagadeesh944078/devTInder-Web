@@ -11,6 +11,7 @@ import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsofService from "./components/TermsofService";
 import Refunds from "./components/Refunds";
 import Contactus from "./components/Contactus";
+import Chat from "./components/Chat";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               <Route path="/terms-of-service" element={<TermsofService />} />
               <Route path="/refunds" element={<Refunds />} />
               <Route path="/contact-us" element={<Contactus />} />
+              <Route path="/chat/:targetUserId" element={<Chat />} />
             </Route>
           </Routes>
         </BrowserRouter>
